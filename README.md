@@ -33,28 +33,28 @@ The "Breakfast at the Frat" dataset consists of time-series sales data for five 
 - **Store Attributes**: Characteristics of the stores, such as size and location
 - **Product Attributes**: Product identifiers, size, and UPC code
 
-For more details, refer to the *User Guide* (`dunnhumby - Breakfast at the Frat User Guide.pdf`)【17†source】.
+For more details, refer to the *User Guide* (`dunnhumby - Breakfast at the Frat User Guide.pdf`).
 
 ### Preprocessing and Exploratory Data Analysis (EDA)
 
 In this stage, the dataset was cleaned and prepared for analysis. Key steps include:
 
-1. **Data Merging and Cleaning**: Combined separate files on transactions, products, and stores into a single dataset. Columns with a high percentage of missing values, such as `PARKING_SPACE_QTY`, were removed. Minor rows with nulls in critical fields like `PRICE` and `BASE_PRICE` were also discarded【16†source】.
-2. **Trend and Seasonality Analysis**: Examined sales trends over time to understand the influence of promotions. Seasonal patterns in sales were identified, with peak sales periods noted across different categories【18†source】.
+1. **Data Merging and Cleaning**: Combined separate files on transactions, products, and stores into a single dataset. Columns with a high percentage of missing values, such as `PARKING_SPACE_QTY`, were removed. Minor rows with nulls in critical fields like `PRICE` and `BASE_PRICE` were also discarded.
+2. **Trend and Seasonality Analysis**: Examined sales trends over time to understand the influence of promotions. Seasonal patterns in sales were identified, with peak sales periods noted across different categories.
 
 ### Model Implementation - SCAN*PRO
 
 The SCAN*PRO model, an econometric tool, was employed to quantify the impact of various promotional types on sales:
 
 - **Promotional Impact Analysis**: Calculated the effect of promotions (FEATURE, DISPLAY, TPR_ONLY) on average units sold, highlighting the importance of visibility-focused strategies like FEATURE and DISPLAY for driving sales.
-- **Cross-Elasticities**: Explored cross-elasticities to observe the effect of promotions on similar products within the same category【19†source】.
+- **Cross-Elasticities**: Explored cross-elasticities to observe the effect of promotions on similar products within the same category.
 
 ### Results and Analysis
 
 The model findings show:
 
 - **FEATURE** and **DISPLAY** promotions substantially increase sales across categories, especially in items like boxed cereals and bagged snacks.
-- **TPR_ONLY** promotions have a lesser impact compared to FEATURE and DISPLAY, indicating that price reductions alone may not be as effective without the visual and strategic support of in-store displays or advertisements【16†source】.
+- **TPR_ONLY** promotions have a lesser impact compared to FEATURE and DISPLAY, indicating that price reductions alone may not be as effective without the visual and strategic support of in-store displays or advertisements.
 
 ### Future Improvements
 
